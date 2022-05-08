@@ -2,6 +2,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HomeScreen from "../screens/home";
 import SettingsScreen from "../screens/settings";
+import MapScreen from "../screens/map";
 import { Icon } from "native-base";
 import { FontAwesome5 } from "@expo/vector-icons";
 import { PeopleStackScreen } from "./_people";
@@ -36,6 +37,17 @@ export default function App() {
                   size={size}
                   color={color}
                 />
+              );
+            },
+          }}
+        />
+        <Tab.Screen
+          name="Map"
+          component={MapScreen}
+          options={{
+            tabBarIcon: ({ color, size }) => {
+              return (
+                <Icon as={FontAwesome5} name="map" size={size} color={color} />
               );
             },
           }}
