@@ -1,11 +1,10 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HomeScreen from "../screens/home";
-import DetailScreen from "../screens/detail";
 import SettingsScreen from "../screens/settings";
-import PeopleScreen from "../screens/people";
 import { Icon } from "native-base";
 import { FontAwesome5 } from "@expo/vector-icons";
+import { PeopleStackScreen } from "./_people";
 
 const Tab = createBottomTabNavigator();
 
@@ -25,25 +24,10 @@ export default function App() {
           }}
         />
         <Tab.Screen
-          name="Detail"
-          component={DetailScreen}
+          name="PeopleScreens"
+          component={PeopleStackScreen}
           options={{
-            tabBarIcon: ({ color, size }) => {
-              return (
-                <Icon
-                  as={FontAwesome5}
-                  name="location-arrow"
-                  size={size}
-                  color={color}
-                />
-              );
-            },
-          }}
-        />
-        <Tab.Screen
-          name="People"
-          component={PeopleScreen}
-          options={{
+            title: "JSE Team",
             tabBarIcon: ({ color, size }) => {
               return (
                 <Icon
