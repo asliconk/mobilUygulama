@@ -1,12 +1,9 @@
-import { View, Text, StyleSheet, ImageBackground,Image, ScrollView, TouchableOpacity } from 'react-native';
-  import React from 'react';
-export default function people() {
-    return (
+import { View, Text } from "react-native";
 
-        <View>
-            <Text>
-               people page
-            </Text>
-        </View>
-    )
+export default function People() {
+  return (
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+      <Text>People!</Text>
+    </View>
+  );
 }

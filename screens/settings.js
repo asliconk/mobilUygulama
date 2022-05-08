@@ -1,12 +1,8 @@
-import { View, Text, StyleSheet, ImageBackground,Image, ScrollView, TouchableOpacity } from 'react-native';
-  import React from 'react';
-export default function settings() {
-    return (
-
-        <View>
-            <Text>
-               settings page
-            </Text>
-        </View>
-    )
+import { View, Text } from "react-native";
+export default function Settings() {
+  return (
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+      <Text>settings!</Text>
+    </View>
+  );
 }

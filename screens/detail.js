@@ -1,12 +1,9 @@
-import { View, Text, StyleSheet, ImageBackground,Image, ScrollView, TouchableOpacity } from 'react-native';
-  import React from 'react';
-export default function detail() {
-    return (
+import { View, Text } from "react-native";
 
-        <View>
-            <Text>
-               detail page
-            </Text>
-        </View>
-    )
+export default function Detail() {
+  return (
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+      <Text>Detail!</Text>
+    </View>
+  );
 }
